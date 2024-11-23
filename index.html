@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Form Section for User Input -->
+        <div class="form-section">
+            <h1>Dynamic Resume Builder</h1>
+            <p><strong>By JALAL</strong></p>
+            <form id="resume-form">
+                <h2>Personal Information</h2>
+                
+                <!-- New Profile Photo Upload Section -->
+                <label for="profile-photo">Profile Photo:</label>
+                <input type="file" id="profile-photo" name="profile-photo" accept="image/*">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="profession">Profession:</label>
+                <input type="text" id="profession" name="profession" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="about">About Me:</label>
+                <textarea id="about" name="about" rows="3" required></textarea>
+
+                <h2>Education</h2>
+                <textarea id="education" name="education" rows="3" required></textarea>
+
+                <h2>Work Experience</h2>
+                <textarea id="experience" name="experience" rows="3" required></textarea>
+
+                <h2>Skills (comma-separated):</h2>
+                <input type="text" id="skills" name="skills" required>
+
+                <h2>Languages (comma-separated):</h2>
+                <input type="text" id="languages" name="languages" required>
+
+                <button type="button" id="generate-button">Generate Resume</button>
+            </form>
+        </div>
+
+        <!-- Dynamic Resume Section (Content will be generated here) -->
+        <div class="resume-section" id="resume">
+            <!-- This section is dynamically updated with the resume content -->
+        </div>
+    </div>
+
+    <!-- TypeScript File -->
+    <script src="script.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+/* Container and General Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a9c4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-section {
+    width: 40%;
+    background-color: #d1eeeb;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(240, 22, 22, 0.1);
+    border-radius: 8px;
+}
+
+.resume-section {
+    width: 55%;
+    background-color:  #d1eeeb;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Form Styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ff0909;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #fef83b;
+    color: rgb(6, 5, 5);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Resume Section Styles */
+.resume {
+    display: center;
+    gap: 80px;
+}
+
+.sidebar {
+    width: 70%;
+    background-color: #bbe7f5;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.main-content {
+    width: 70%;
+}
+
+h3 {
+    color: #4CAF50;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
